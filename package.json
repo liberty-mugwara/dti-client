@@ -1,7 +1,12 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
+  "name": "dti-client",
+  "version": "0.0.1",
   "private": true,
+  "author": {
+    "name": "Liberty Mugwara",
+    "email": "libertymugwara@live.com",
+    "site": "https:"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,6 +15,12 @@
   "dependencies": {
     "next": "^10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-icons": "^4.2.0",
+    "react-transition-group": "^4.4.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0"
   }
 }
