@@ -27,6 +27,7 @@ const theme = {
     // example colors
     primary: "#0070f3",
     secondary: "#bbff00",
+    tertiary: "#123f3a",
   },
 };
 
