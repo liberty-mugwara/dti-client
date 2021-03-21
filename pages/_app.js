@@ -1,35 +1,7 @@
 import React from "react";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-
-const GlobalStyle = createGlobalStyle`
-  html {
-    font-size: 62.5%;
-  }
-
-  *,
-  *::before,
-  *::after{
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-  }
-
-  body {
-    font-size: 1.6rem;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-  }
-`;
-
-const theme = {
-  colors: {
-    // example colors
-    primary: "#0070f3",
-    secondary: "#bbff00",
-    tertiary: "#123f3a",
-  },
-};
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "../global-styles";
+import theme from "../theme";
 
 export default function App({ Component, pageProps }) {
   const Layout = Component.layout || React.Fragment;

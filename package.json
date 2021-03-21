@@ -13,6 +13,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.12",
+    "graphql": "^15.5.0",
     "next": "^10.0.0",
     "react": "17.0.1",
     "react-cookie": "^4.0.3",
