@@ -1,9 +1,12 @@
-import React from "react";
 import styled from "styled-components";
 
-// Example Layout by Mugs
-
-const GridLayout = styled.div`
+/** Requires 4 direct children
+ * 1. header element
+ * 2. aside element
+ * 3. main element
+ * 4. footer element
+ */
+export default styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: repeat(3, auto);
@@ -28,10 +31,3 @@ const GridLayout = styled.div`
     grid-area: footer;
   }
 `;
-
-const MainLayout = ({ children }) => <GridLayout>{children}</GridLayout>;
-
-export const useMainLayout = Component => {
-  Component.layout = MainLayout;
-  return Component;
-};
